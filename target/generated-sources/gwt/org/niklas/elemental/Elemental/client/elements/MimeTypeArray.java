@@ -10,7 +10,7 @@ interface MimeTypeArray {
   @JsProperty
   int getLength();
 
-  int item(int index);
+  MimeType item(int index);
 
-  String namedItem(String name);
+  MimeType namedItem(String name);
 }

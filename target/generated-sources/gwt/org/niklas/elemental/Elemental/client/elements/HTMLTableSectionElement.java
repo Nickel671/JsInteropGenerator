@@ -34,7 +34,7 @@ interface HTMLTableSectionElement extends HTMLElement {
   @JsProperty
   void setVAlign(String value);
 
-  int insertRow(int index);
+  HTMLElement insertRow(int index);
 
-  int deleteRow(int index);
+  void deleteRow(int index);
 }

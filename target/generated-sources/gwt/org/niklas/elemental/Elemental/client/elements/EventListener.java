@@ -6,5 +6,5 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "EventListener"
 )
 interface EventListener {
-  Event handleEvent(Event event);
+  void handleEvent(Event event);
 }

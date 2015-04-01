@@ -6,11 +6,11 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "PortCollection"
 )
 interface PortCollection {
-  MessagePort add(MessagePort port);
+  void add(MessagePort port);
 
-  MessagePort remove(MessagePort port);
+  void remove(MessagePort port);
 
   void clear();
 
-  PortCollectionCallback iterate(PortCollectionCallback callback);
+  void iterate(PortCollectionCallback callback);
 }

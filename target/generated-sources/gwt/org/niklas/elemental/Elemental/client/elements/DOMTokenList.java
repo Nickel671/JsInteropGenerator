@@ -10,13 +10,13 @@ interface DOMTokenList {
   @JsProperty
   int getLength();
 
-  int item(int index);
+  String item(int index);
 
-  String contains(String token);
+  boolean contains(String token);
 
-  String add(String tokens);
+  void add(String tokens);
 
-  String remove(String tokens);
+  void remove(String tokens);
 
   boolean toggle(String token, boolean force);
 }

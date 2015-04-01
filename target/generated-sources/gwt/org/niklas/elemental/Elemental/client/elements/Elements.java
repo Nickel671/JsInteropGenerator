@@ -6,7 +6,7 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "Elements"
 )
 interface Elements {
-  String query(String relativeSelectors);
+  Element query(String relativeSelectors);
 
-  String queryAll(String relativeSelectors);
+  Elements queryAll(String relativeSelectors);
 }

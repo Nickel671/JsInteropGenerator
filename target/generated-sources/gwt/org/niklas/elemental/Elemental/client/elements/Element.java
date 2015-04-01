@@ -43,21 +43,21 @@ interface Element extends ParentNode, NonDocumentTypeChildNode, ChildNode, Node 
 
   String getAttributeNS(String namespace, String localName);
 
-  String setAttribute(String name, String value);
+  void setAttribute(String name, String value);
 
-  String setAttributeNS(String namespace, String name, String value);
+  void setAttributeNS(String namespace, String name, String value);
 
-  String removeAttribute(String name);
+  void removeAttribute(String name);
 
-  String removeAttributeNS(String namespace, String localName);
+  void removeAttributeNS(String namespace, String localName);
 
-  String hasAttribute(String name);
+  boolean hasAttribute(String name);
 
-  String hasAttributeNS(String namespace, String localName);
+  boolean hasAttributeNS(String namespace, String localName);
 
-  String getAttributeNode(String name);
+  Attr getAttributeNode(String name);
 
-  String getAttributeNodeNS(String namespace, String localName);
+  Attr getAttributeNodeNS(String namespace, String localName);
 
   Attr setAttributeNode(Attr attr);
 
@@ -65,13 +65,13 @@ interface Element extends ParentNode, NonDocumentTypeChildNode, ChildNode, Node 
 
   Attr removeAttributeNode(Attr attr);
 
-  String closest(String selectors);
+  Element closest(String selectors);
 
-  String matches(String selectors);
+  boolean matches(String selectors);
 
-  String getElementsByTagName(String localName);
+  HTMLCollection getElementsByTagName(String localName);
 
-  String getElementsByTagNameNS(String namespace, String localName);
+  HTMLCollection getElementsByTagNameNS(String namespace, String localName);
 
-  String getElementsByClassName(String classNames);
+  HTMLCollection getElementsByClassName(String classNames);
 }

@@ -72,19 +72,17 @@ interface Window extends EventTarget, GlobalEventHandlers, WindowEventHandlers, 
 
   void blur();
 
-  boolean open(String url, String target, String features, boolean replace);
-
   void alert();
 
-  String alert(String message);
+  void alert(String message);
 
-  String confirm(String message);
+  boolean confirm(String message);
 
   String prompt(String message, String default_);
 
   void print();
 
-  int cancelAnimationFrame(int handle);
+  void cancelAnimationFrame(int handle);
 
   void captureEvents();
 

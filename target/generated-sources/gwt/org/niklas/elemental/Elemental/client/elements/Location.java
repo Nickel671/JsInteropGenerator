@@ -6,9 +6,9 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "Location"
 )
 interface Location {
-  String assign(String url);
+  void assign(String url);
 
-  String replace(String url);
+  void replace(String url);
 
   void reload();
 }

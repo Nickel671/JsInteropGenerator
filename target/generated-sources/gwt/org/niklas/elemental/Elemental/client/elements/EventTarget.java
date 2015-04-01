@@ -6,9 +6,9 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "EventTarget"
 )
 interface EventTarget {
-  boolean addEventListener(String type, EventListener callback, boolean capture);
+  void addEventListener(String type, EventListener callback, boolean capture);
 
-  boolean removeEventListener(String type, EventListener callback, boolean capture);
+  void removeEventListener(String type, EventListener callback, boolean capture);
 
-  Event dispatchEvent(Event event);
+  boolean dispatchEvent(Event event);
 }

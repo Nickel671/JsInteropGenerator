@@ -22,11 +22,11 @@ interface DataTransfer {
   @JsProperty
   DataTransferItemList getItems();
 
-  int setDragImage(Element image, int x, int y);
+  void setDragImage(Element image, int x, int y);
 
   String getData(String format);
 
-  String setData(String format, String data);
+  void setData(String format, String data);
 
-  String clearData(String format);
+  void clearData(String format);
 }

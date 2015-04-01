@@ -146,13 +146,13 @@ interface HTMLTextAreaElement extends HTMLElement {
 
   boolean reportValidity();
 
-  String setCustomValidity(String error);
+  void setCustomValidity(String error);
 
   void select();
 
-  String setRangeText(String replacement);
+  void setRangeText(String replacement);
 
-  String setRangeText(String replacement, int start, int end, String selectionMode);
+  void setRangeText(String replacement, int start, int end, String selectionMode);
 
-  String setSelectionRange(int start, int end, String direction);
+  void setSelectionRange(int start, int end, String direction);
 }

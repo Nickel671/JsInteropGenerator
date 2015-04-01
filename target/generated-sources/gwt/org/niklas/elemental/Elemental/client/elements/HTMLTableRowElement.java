@@ -46,7 +46,7 @@ interface HTMLTableRowElement extends HTMLElement {
   @JsProperty
   void setBgColor(String value);
 
-  int insertCell(int index);
+  HTMLElement insertCell(int index);
 
-  int deleteCell(int index);
+  void deleteCell(int index);
 }

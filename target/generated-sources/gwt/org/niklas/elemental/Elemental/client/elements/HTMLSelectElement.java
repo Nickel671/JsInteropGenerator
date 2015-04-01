@@ -91,17 +91,17 @@ interface HTMLSelectElement extends HTMLElement {
   @JsProperty
   NodeList getLabels();
 
-  int item(int index);
+  Element item(int index);
 
-  String namedItem(String name);
+  HTMLOptionElement namedItem(String name);
 
   void remove();
 
-  int remove(int index);
+  void remove(int index);
 
   boolean checkValidity();
 
   boolean reportValidity();
 
-  String setCustomValidity(String error);
+  void setCustomValidity(String error);
 }

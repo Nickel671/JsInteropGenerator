@@ -10,5 +10,5 @@ interface NodeList {
   @JsProperty
   int getLength();
 
-  int item(int index);
+  Node item(int index);
 }

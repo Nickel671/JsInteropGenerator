@@ -6,11 +6,11 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "DOMImplementation"
 )
 interface DOMImplementation {
-  String createDocumentType(String qualifiedName, String publicId, String systemId);
+  DocumentType createDocumentType(String qualifiedName, String publicId, String systemId);
 
-  DocumentType createDocument(String namespace, String qualifiedName, DocumentType doctype);
+  XMLDocument createDocument(String namespace, String qualifiedName, DocumentType doctype);
 
-  String createHTMLDocument(String title);
+  Document createHTMLDocument(String title);
 
   boolean hasFeature();
 }

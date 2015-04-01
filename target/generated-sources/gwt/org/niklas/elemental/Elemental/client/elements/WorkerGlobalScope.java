@@ -42,5 +42,5 @@ interface WorkerGlobalScope extends ImageBitmapFactories, EventTarget, WindowTim
 
   void close();
 
-  String importScripts(String urls);
+  void importScripts(String urls);
 }

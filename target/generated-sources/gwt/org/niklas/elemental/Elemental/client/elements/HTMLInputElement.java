@@ -271,21 +271,21 @@ interface HTMLInputElement extends HTMLElement {
   @JsProperty
   void setUseMap(String value);
 
-  int stepUp(int n);
+  void stepUp(int n);
 
-  int stepDown(int n);
+  void stepDown(int n);
 
   boolean checkValidity();
 
   boolean reportValidity();
 
-  String setCustomValidity(String error);
+  void setCustomValidity(String error);
 
   void select();
 
-  String setRangeText(String replacement);
+  void setRangeText(String replacement);
 
-  String setRangeText(String replacement, int start, int end, String selectionMode);
+  void setRangeText(String replacement, int start, int end, String selectionMode);
 
-  String setSelectionRange(int start, int end, String direction);
+  void setSelectionRange(int start, int end, String direction);
 }

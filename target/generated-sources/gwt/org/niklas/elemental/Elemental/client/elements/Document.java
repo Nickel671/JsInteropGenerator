@@ -163,65 +163,63 @@ interface Document extends NonElementParentNode, ParentNode, Node, GlobalEventHa
   @JsProperty
   HTMLAllCollection getAll();
 
-  String getElementsByTagName(String localName);
+  HTMLCollection getElementsByTagName(String localName);
 
-  String getElementsByTagNameNS(String namespace, String localName);
+  HTMLCollection getElementsByTagNameNS(String namespace, String localName);
 
-  String getElementsByClassName(String classNames);
+  HTMLCollection getElementsByClassName(String classNames);
 
-  String createElement(String localName);
+  Element createElement(String localName);
 
-  String createElementNS(String namespace, String qualifiedName);
+  Element createElementNS(String namespace, String qualifiedName);
 
   DocumentFragment createDocumentFragment();
 
-  String createTextNode(String data);
+  Text createTextNode(String data);
 
-  String createComment(String data);
+  Comment createComment(String data);
 
-  String createProcessingInstruction(String target, String data);
+  ProcessingInstruction createProcessingInstruction(String target, String data);
 
-  boolean importNode(Node node, boolean deep);
+  Node importNode(Node node, boolean deep);
 
   Node adoptNode(Node node);
 
-  String createAttribute(String localName);
+  Attr createAttribute(String localName);
 
-  String createAttributeNS(String namespace, String name);
+  Attr createAttributeNS(String namespace, String name);
 
-  String createEvent(String interface_);
+  Event createEvent(String interface_);
 
   Range createRange();
 
-  NodeFilter createNodeIterator(Node root, int whatToShow, NodeFilter filter);
+  NodeIterator createNodeIterator(Node root, int whatToShow, NodeFilter filter);
 
-  NodeFilter createTreeWalker(Node root, int whatToShow, NodeFilter filter);
+  TreeWalker createTreeWalker(Node root, int whatToShow, NodeFilter filter);
 
-  String getElementsByName(String elementName);
+  NodeList getElementsByName(String elementName);
 
-  String getItems(String typeNames);
+  NodeList getItems(String typeNames);
 
-  String open(String type, String replace);
-
-  boolean open(String url, String name, String features, boolean replace);
+  Document open(String type, String replace);
 
   void close();
 
-  String write(String text);
+  void write(String text);
 
-  String writeln(String text);
+  void writeln(String text);
 
   boolean hasFocus();
 
-  String execCommand(String commandId, boolean showUI, String value);
+  boolean execCommand(String commandId, boolean showUI, String value);
 
-  String queryCommandEnabled(String commandId);
+  boolean queryCommandEnabled(String commandId);
 
-  String queryCommandIndeterm(String commandId);
+  boolean queryCommandIndeterm(String commandId);
 
-  String queryCommandState(String commandId);
+  boolean queryCommandState(String commandId);
 
-  String queryCommandSupported(String commandId);
+  boolean queryCommandSupported(String commandId);
 
   String queryCommandValue(String commandId);
 

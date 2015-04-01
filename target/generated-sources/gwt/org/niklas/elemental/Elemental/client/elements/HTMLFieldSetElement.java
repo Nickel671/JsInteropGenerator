@@ -41,5 +41,5 @@ interface HTMLFieldSetElement extends HTMLElement {
 
   boolean reportValidity();
 
-  String setCustomValidity(String error);
+  void setCustomValidity(String error);
 }

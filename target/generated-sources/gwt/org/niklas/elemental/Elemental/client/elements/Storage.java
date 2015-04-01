@@ -10,13 +10,13 @@ interface Storage {
   @JsProperty
   int getLength();
 
-  int key(int index);
+  String key(int index);
 
   String getItem(String key);
 
-  String setItem(String key, String value);
+  void setItem(String key, String value);
 
-  String removeItem(String key);
+  void removeItem(String key);
 
   void clear();
 }

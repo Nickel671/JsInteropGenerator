@@ -6,5 +6,5 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "HTMLPropertiesCollection"
 )
 interface HTMLPropertiesCollection extends HTMLCollection {
-  String namedItem(String name);
+  Element namedItem(String name);
 }

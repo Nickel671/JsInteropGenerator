@@ -19,5 +19,5 @@ interface HTMLOptionsCollection extends HTMLCollection {
   @JsProperty
   void setSelectedIndex(int value);
 
-  int remove(int index);
+  void remove(int index);
 }

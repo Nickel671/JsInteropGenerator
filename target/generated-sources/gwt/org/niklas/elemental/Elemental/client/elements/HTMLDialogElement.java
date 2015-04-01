@@ -19,5 +19,5 @@ interface HTMLDialogElement extends HTMLElement {
   @JsProperty
   void setReturnValue(String value);
 
-  String close(String returnValue);
+  void close(String returnValue);
 }

@@ -71,7 +71,7 @@ public class IdlListener extends WebIdlBaseListener {
 		}
 		IdlOperation operation = new IdlOperation();
 		operation.setName(ctx.operationRest().optionalIdentifier().getText());
-		operation.setType(ParserUtils.getType(ctx,typeDef));
+		operation.setType(ParserUtils.getType(ctx.operationRest().returntype(),typeDef));
 		operation.setArguments(argList.getArguments());
 		if(argList.isContainsObjectType() || operation.getType().equals("Object"))
 			operation.setContainsObjectType(true);

@@ -6,5 +6,5 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "CanvasGradient"
 )
 interface CanvasGradient {
-  String addColorStop(double offset, String color);
+  void addColorStop(double offset, String color);
 }

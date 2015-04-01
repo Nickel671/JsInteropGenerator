@@ -10,9 +10,9 @@ interface DataTransferItemList {
   @JsProperty
   int getLength();
 
-  String add(String data, String type);
+  DataTransferItem add(String data, String type);
 
-  int remove(int index);
+  void remove(int index);
 
   void clear();
 }

@@ -6,9 +6,5 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "HTMLAllCollection"
 )
 interface HTMLAllCollection extends HTMLCollection {
-  int item(int index);
-
-  String item(String name);
-
-  String namedItem(String name);
+  Element item(int index);
 }

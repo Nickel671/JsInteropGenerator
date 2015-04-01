@@ -6,7 +6,7 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "External"
 )
 interface External {
-  String AddSearchProvider(String engineURL);
+  void AddSearchProvider(String engineURL);
 
-  String IsSearchProviderInstalled(String engineURL);
+  int IsSearchProviderInstalled(String engineURL);
 }

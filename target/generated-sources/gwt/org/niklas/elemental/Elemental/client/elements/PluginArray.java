@@ -10,9 +10,9 @@ interface PluginArray {
   @JsProperty
   int getLength();
 
-  boolean refresh(boolean reload);
+  void refresh(boolean reload);
 
-  int item(int index);
+  Plugin item(int index);
 
-  String namedItem(String name);
+  Plugin namedItem(String name);
 }

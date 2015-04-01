@@ -37,5 +37,5 @@ interface Event {
 
   void preventDefault();
 
-  boolean initEvent(String type, boolean bubbles, boolean cancelable);
+  void initEvent(String type, boolean bubbles, boolean cancelable);
 }

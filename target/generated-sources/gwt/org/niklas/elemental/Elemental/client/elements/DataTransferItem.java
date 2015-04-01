@@ -13,5 +13,5 @@ interface DataTransferItem {
   @JsProperty
   String getType();
 
-  FunctionStringCallback getAsString(FunctionStringCallback _callback);
+  void getAsString(FunctionStringCallback _callback);
 }

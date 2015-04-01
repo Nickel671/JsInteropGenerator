@@ -6,5 +6,5 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "XMLDocument"
 )
 interface XMLDocument extends Document {
-  String load(String url);
+  boolean load(String url);
 }

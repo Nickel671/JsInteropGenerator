@@ -6,5 +6,5 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "NonElementParentNode"
 )
 interface NonElementParentNode {
-  String getElementById(String elementId);
+  Element getElementById(String elementId);
 }

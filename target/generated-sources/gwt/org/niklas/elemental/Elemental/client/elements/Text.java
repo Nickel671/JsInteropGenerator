@@ -10,5 +10,5 @@ interface Text extends CharacterData {
   @JsProperty
   String getWholeText();
 
-  int splitText(int offset);
+  Text splitText(int offset);
 }

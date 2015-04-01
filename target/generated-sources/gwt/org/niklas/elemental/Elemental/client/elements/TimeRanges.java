@@ -10,7 +10,7 @@ interface TimeRanges {
   @JsProperty
   int getLength();
 
-  int start(int index);
+  double start(int index);
 
-  int end(int index);
+  double end(int index);
 }

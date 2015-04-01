@@ -10,5 +10,5 @@ interface TextTrackCueList {
   @JsProperty
   int getLength();
 
-  String getCueById(String id);
+  TextTrackCue getCueById(String id);
 }

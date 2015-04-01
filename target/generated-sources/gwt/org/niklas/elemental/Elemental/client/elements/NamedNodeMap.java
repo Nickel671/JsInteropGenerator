@@ -10,17 +10,17 @@ interface NamedNodeMap {
   @JsProperty
   int getLength();
 
-  int item(int index);
+  Attr item(int index);
 
-  String getNamedItem(String name);
+  Attr getNamedItem(String name);
 
-  String getNamedItemNS(String namespace, String localName);
+  Attr getNamedItemNS(String namespace, String localName);
 
   Attr setNamedItem(Attr attr);
 
   Attr setNamedItemNS(Attr attr);
 
-  String removeNamedItem(String name);
+  Attr removeNamedItem(String name);
 
-  String removeNamedItemNS(String namespace, String localName);
+  Attr removeNamedItemNS(String namespace, String localName);
 }

@@ -137,11 +137,11 @@ interface HTMLMediaElement extends HTMLElement {
 
   String canPlayType(String type);
 
-  double fastSeek(double time);
+  void fastSeek(double time);
 
   void play();
 
   void pause();
 
-  String addTextTrack(String kind, String label, String language);
+  TextTrack addTextTrack(String kind, String label, String language);
 }

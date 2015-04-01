@@ -6,7 +6,7 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "WindowTimers"
 )
 interface WindowTimers {
-  int clearTimeout(int handle);
+  void clearTimeout(int handle);
 
-  int clearInterval(int handle);
+  void clearInterval(int handle);
 }

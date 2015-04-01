@@ -19,11 +19,11 @@ interface ParentNode {
   @JsProperty
   int getChildElementCount();
 
-  String query(String relativeSelectors);
+  Element query(String relativeSelectors);
 
-  String queryAll(String relativeSelectors);
+  Elements queryAll(String relativeSelectors);
 
-  String querySelector(String selectors);
+  Element querySelector(String selectors);
 
-  String querySelectorAll(String selectors);
+  NodeList querySelectorAll(String selectors);
 }

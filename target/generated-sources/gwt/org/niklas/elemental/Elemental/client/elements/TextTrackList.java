@@ -28,5 +28,5 @@ interface TextTrackList extends EventTarget {
   @JsProperty
   void setOnremovetrack(EventHandlerNonNull value);
 
-  String getTrackById(String id);
+  TextTrack getTrackById(String id);
 }

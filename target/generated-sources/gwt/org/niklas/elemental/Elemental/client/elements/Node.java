@@ -56,19 +56,19 @@ interface Node extends EventTarget {
 
   void normalize();
 
-  boolean cloneNode(boolean deep);
+  Node cloneNode(boolean deep);
 
-  Node isEqualNode(Node node);
+  boolean isEqualNode(Node node);
 
-  Node compareDocumentPosition(Node other);
+  short compareDocumentPosition(Node other);
 
-  Node contains(Node other);
+  boolean contains(Node other);
 
   String lookupPrefix(String namespace);
 
   String lookupNamespaceURI(String prefix);
 
-  String isDefaultNamespace(String namespace);
+  boolean isDefaultNamespace(String namespace);
 
   Node insertBefore(Node node, Node child);
 

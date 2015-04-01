@@ -10,7 +10,7 @@ interface History {
   @JsProperty
   int getLength();
 
-  int go(int delta);
+  void go(int delta);
 
   void back();
 

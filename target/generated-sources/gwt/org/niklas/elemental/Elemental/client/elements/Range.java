@@ -25,25 +25,25 @@ interface Range {
   @JsProperty
   Node getCommonAncestorContainer();
 
-  int setStart(Node node, int offset);
+  void setStart(Node node, int offset);
 
-  int setEnd(Node node, int offset);
+  void setEnd(Node node, int offset);
 
-  Node setStartBefore(Node node);
+  void setStartBefore(Node node);
 
-  Node setStartAfter(Node node);
+  void setStartAfter(Node node);
 
-  Node setEndBefore(Node node);
+  void setEndBefore(Node node);
 
-  Node setEndAfter(Node node);
+  void setEndAfter(Node node);
 
-  boolean collapse(boolean toStart);
+  void collapse(boolean toStart);
 
-  Node selectNode(Node node);
+  void selectNode(Node node);
 
-  Node selectNodeContents(Node node);
+  void selectNodeContents(Node node);
 
-  Range compareBoundaryPoints(short how, Range sourceRange);
+  short compareBoundaryPoints(short how, Range sourceRange);
 
   void deleteContents();
 
@@ -51,17 +51,17 @@ interface Range {
 
   DocumentFragment cloneContents();
 
-  Node insertNode(Node node);
+  void insertNode(Node node);
 
-  Node surroundContents(Node newParent);
+  void surroundContents(Node newParent);
 
   Range cloneRange();
 
   void detach();
 
-  int isPointInRange(Node node, int offset);
+  boolean isPointInRange(Node node, int offset);
 
-  int comparePoint(Node node, int offset);
+  short comparePoint(Node node, int offset);
 
-  Node intersectsNode(Node node);
+  boolean intersectsNode(Node node);
 }

@@ -31,5 +31,5 @@ interface VideoTrackList extends EventTarget {
   @JsProperty
   void setOnremovetrack(EventHandlerNonNull value);
 
-  String getTrackById(String id);
+  VideoTrack getTrackById(String id);
 }

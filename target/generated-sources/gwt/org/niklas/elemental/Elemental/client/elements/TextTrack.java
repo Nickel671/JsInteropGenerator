@@ -40,7 +40,7 @@ interface TextTrack extends EventTarget {
   @JsProperty
   void setOncuechange(EventHandlerNonNull value);
 
-  TextTrackCue addCue(TextTrackCue cue);
+  void addCue(TextTrackCue cue);
 
-  TextTrackCue removeCue(TextTrackCue cue);
+  void removeCue(TextTrackCue cue);
 }

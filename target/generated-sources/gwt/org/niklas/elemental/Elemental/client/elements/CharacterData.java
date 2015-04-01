@@ -16,13 +16,13 @@ interface CharacterData extends NonDocumentTypeChildNode, ChildNode, Node {
   @JsProperty
   int getLength();
 
-  int substringData(int offset, int count);
+  String substringData(int offset, int count);
 
-  String appendData(String data);
+  void appendData(String data);
 
-  String insertData(int offset, String data);
+  void insertData(int offset, String data);
 
-  int deleteData(int offset, int count);
+  void deleteData(int offset, int count);
 
-  String replaceData(int offset, int count, String data);
+  void replaceData(int offset, int count, String data);
 }

@@ -61,7 +61,7 @@ interface CanvasDrawingStyles {
   @JsProperty
   void setDirection(String value);
 
-  double setLineDash(double segments);
+  void setLineDash(double segments);
 
   double getLineDash();
 }

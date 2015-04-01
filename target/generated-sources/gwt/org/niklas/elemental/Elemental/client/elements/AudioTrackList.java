@@ -28,5 +28,5 @@ interface AudioTrackList extends EventTarget {
   @JsProperty
   void setOnremovetrack(EventHandlerNonNull value);
 
-  String getTrackById(String id);
+  AudioTrack getTrackById(String id);
 }

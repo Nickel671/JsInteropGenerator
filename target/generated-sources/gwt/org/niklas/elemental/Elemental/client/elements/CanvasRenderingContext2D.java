@@ -70,77 +70,77 @@ interface CanvasRenderingContext2D extends CanvasDrawingStyles, CanvasPathMethod
 
   void restore();
 
-  double scale(double x, double y);
+  void scale(double x, double y);
 
-  double rotate(double angle);
+  void rotate(double angle);
 
-  double translate(double x, double y);
+  void translate(double x, double y);
 
-  double transform(double a, double b, double c, double d, double e, double f);
+  void transform(double a, double b, double c, double d, double e, double f);
 
-  double setTransform(double a, double b, double c, double d, double e, double f);
+  void setTransform(double a, double b, double c, double d, double e, double f);
 
   void resetTransform();
 
-  double createLinearGradient(double x0, double y0, double x1, double y1);
+  CanvasGradient createLinearGradient(double x0, double y0, double x1, double y1);
 
-  double createRadialGradient(double x0, double y0, double r0, double x1, double y1, double r1);
+  CanvasGradient createRadialGradient(double x0, double y0, double r0, double x1, double y1, double r1);
 
-  double clearRect(double x, double y, double w, double h);
+  void clearRect(double x, double y, double w, double h);
 
-  double fillRect(double x, double y, double w, double h);
+  void fillRect(double x, double y, double w, double h);
 
-  double strokeRect(double x, double y, double w, double h);
+  void strokeRect(double x, double y, double w, double h);
 
   void beginPath();
 
-  String fill(String fillRule);
+  void fill(String fillRule);
 
-  String fill(Path2D path, String fillRule);
+  void fill(Path2D path, String fillRule);
 
   void stroke();
 
-  Path2D stroke(Path2D path);
+  void stroke(Path2D path);
 
-  Element drawFocusIfNeeded(Element element);
+  void drawFocusIfNeeded(Element element);
 
-  Element drawFocusIfNeeded(Path2D path, Element element);
+  void drawFocusIfNeeded(Path2D path, Element element);
 
   void scrollPathIntoView();
 
-  Path2D scrollPathIntoView(Path2D path);
+  void scrollPathIntoView(Path2D path);
 
-  String clip(String fillRule);
+  void clip(String fillRule);
 
-  String clip(Path2D path, String fillRule);
+  void clip(Path2D path, String fillRule);
 
   void resetClip();
 
-  String isPointInPath(double x, double y, String fillRule);
+  boolean isPointInPath(double x, double y, String fillRule);
 
-  String isPointInPath(Path2D path, double x, double y, String fillRule);
+  boolean isPointInPath(Path2D path, double x, double y, String fillRule);
 
-  double isPointInStroke(double x, double y);
+  boolean isPointInStroke(double x, double y);
 
-  double isPointInStroke(Path2D path, double x, double y);
+  boolean isPointInStroke(Path2D path, double x, double y);
 
-  double fillText(String text, double x, double y, double maxWidth);
+  void fillText(String text, double x, double y, double maxWidth);
 
-  double strokeText(String text, double x, double y, double maxWidth);
+  void strokeText(String text, double x, double y, double maxWidth);
 
-  String measureText(String text);
+  TextMetrics measureText(String text);
 
-  String removeHitRegion(String id);
+  void removeHitRegion(String id);
 
   void clearHitRegions();
 
-  double createImageData(double sw, double sh);
+  ImageData createImageData(double sw, double sh);
 
   ImageData createImageData(ImageData imagedata);
 
-  double getImageData(double sx, double sy, double sw, double sh);
+  ImageData getImageData(double sx, double sy, double sw, double sh);
 
-  double putImageData(ImageData imagedata, double dx, double dy);
+  void putImageData(ImageData imagedata, double dx, double dy);
 
-  double putImageData(ImageData imagedata, double dx, double dy, double dirtyX, double dirtyY, double dirtyWidth, double dirtyHeight);
+  void putImageData(ImageData imagedata, double dx, double dy, double dirtyX, double dirtyY, double dirtyWidth, double dirtyHeight);
 }

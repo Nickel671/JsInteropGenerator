@@ -6,5 +6,5 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "NodeFilter"
 )
 interface NodeFilter {
-  Node acceptNode(Node node);
+  short acceptNode(Node node);
 }

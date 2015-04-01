@@ -10,7 +10,7 @@ interface HTMLCollection {
   @JsProperty
   int getLength();
 
-  int item(int index);
+  Element item(int index);
 
-  String namedItem(String name);
+  Element namedItem(String name);
 }

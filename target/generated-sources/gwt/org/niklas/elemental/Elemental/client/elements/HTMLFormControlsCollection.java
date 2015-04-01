@@ -6,5 +6,4 @@ import com.google.gwt.core.client.js.JsType;
     prototype = "HTMLFormControlsCollection"
 )
 interface HTMLFormControlsCollection extends HTMLCollection {
-  String namedItem(String name);
 }

@@ -105,9 +105,9 @@ interface HTMLTableElement extends HTMLElement {
 
   HTMLElement createTBody();
 
-  int insertRow(int index);
+  HTMLElement insertRow(int index);
 
-  int deleteRow(int index);
+  void deleteRow(int index);
 
   void stopSorting();
 }
