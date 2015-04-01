@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="Elemental">
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='org.niklas.elemental.Elemental.Elemental' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/Elemental/greet" class="org.niklas.elemental.Elemental.server.GreetingServiceImpl" />
+
+</module>
